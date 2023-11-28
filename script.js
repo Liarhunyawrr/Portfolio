@@ -19,13 +19,15 @@ function gra() {
   }
 }
 
+
+
+
 function gsap1() {
   let tl = gsap.timeline();
   tl.to(".load", {
-    y: -720,
+    opacity:0,
     scale: 0,
-    duration: 5,
-    delay: 5,
+    delay: 2,
   });
   tl.to("body", {
     overflow: "visible",
@@ -65,8 +67,9 @@ function gsap1() {
     scrollTrigger: {
       scroll: "body",
       trigger: ".page2",
-      start: "top 500",
+      start: "top 1200",
       scrub: 2,
+
     },
   });
   gsap.from(".talk h1", {
@@ -253,8 +256,8 @@ gsap.from(".icons span i", {
     scroll: "#scro",
     trigger: ".page7",
     scrub: 2,
-    start: "top 70%",
-    end: "top 70%",
+    start: "top 90%",
+    end: "top 90%",
   },
 });
 
@@ -285,3 +288,9 @@ document.addEventListener("DOMContentLoaded", function () {
     cursor.style.opacity = "0";
   });
 });
+
+
+
+
+
+
